@@ -1,0 +1,25 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "node_modules": true,
+    "yarn.lock": true,
+    "LICENSE": true,
+    ".dockerignore": true,
+    ".eslintrc.js": true,
+    ".gitignore": false,
+    ".vscode": true,
+    ".github/*.*": true,
+    ".github": true,
+    "rollup.config.js": true,
+    "tsconfig.json": true,
+    "build": true,
+    "prod": true,
+    "package-lock.json": true,
+    "Dockerfile": true
+  },
+  "explorerExclude.backup": null
+}
