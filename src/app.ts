@@ -7,7 +7,7 @@ type IconSpec = {
 };
 
 class Icon {
-  private outputPath = './icon/';
+  private outputPath = './icons/';
   constructor(private filePath: string) {
     this.filePath = filePath;
   }

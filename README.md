@@ -2,7 +2,7 @@
 
 This is a simple node.js program to simplify converting original artwork to the numerous progressive web app icon formats.
 
-pwa-icon-generator saves image output to the ```/icon/``` folder which can be dropped inside the ```/public/``` directory of my [full-stack-antd-next](https://github.com/timothymiller/full-stack-antd-next) template. Two steps to support favicons/PWA icons on all web client platforms from Windows 7 to iOS 14.
+pwa-icon-generator saves image output to the ```/icons/``` folder which can be dropped inside the ```/public/``` directory of my [full-stack-antd-next](https://github.com/timothymiller/full-stack-antd-next) template. Two steps to support favicons/PWA icons on all web client platforms from Windows 7 to iOS 14.
 
 ### 🖼️ Input
 
@@ -12,7 +12,7 @@ Place images inside the ```/convert/``` folder in the project root directory, th
 
 ### 🎞️ Output
 
-Images are saved inside the ```/icon/``` folder in the project root directory.
+Images are saved inside the ```/icons/``` folder in the project root directory.
 
 
 Technical information about the TypeScript stack is listed below:
