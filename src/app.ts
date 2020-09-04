@@ -47,12 +47,12 @@ class Icon {
   async convertApple(this: Icon) {
     if (!this.isMasked()) return;
     const designSpecs: IconSpec[] = [
-      { size: 57, name: 'touch-icon-iphone.jpg' },
-      { size: 76, name: 'touch-icon-ipad.jpg' },
-      { size: 120, name: 'touch-icon-iphone-retina.jpg' },
-      { size: 152, name: 'touch-icon-ipad-retina.jpg' },
-      { size: 167, name: 'touch-icon-ipad-pro.jpg' },
-      { size: 180, name: 'touch-icon-iphone-6-plus.jpg' },
+      { size: 57, name: 'touch-icon-iphone.png' },
+      { size: 76, name: 'touch-icon-ipad.png' },
+      { size: 120, name: 'touch-icon-iphone-retina.png' },
+      { size: 152, name: 'touch-icon-ipad-retina.png' },
+      { size: 167, name: 'touch-icon-ipad-pro.png' },
+      { size: 180, name: 'touch-icon-iphone-6-plus.png' },
     ];
     await this.resize(designSpecs);
   }
@@ -126,8 +126,8 @@ const main = async () => {
       throw icon.describe + ' width must equal height.';
     }
   }
+  console.log('Generating icons...');
   for (const icon of icons) {
-    icon.describe();
     await icon.convertAll();
   }
 };
