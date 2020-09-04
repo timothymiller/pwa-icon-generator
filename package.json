@@ -13,7 +13,10 @@
     "deploy": "docker build -t timothymiller/pwa-icon-generator:latest ."
   },
   "dependencies": {
-    "jimp": "^0.16.1"
+    "create-ico": "^1.0.0",
+    "favicons": "^6.2.0",
+    "jimp": "^0.16.1",
+    "node-vibrant": "^3.1.5"
   },
   "devDependencies": {
     "@rollup/plugin-strip": "^2.0.0",

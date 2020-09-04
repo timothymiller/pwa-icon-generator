@@ -1,5 +1,8 @@
 import Jimp from 'jimp';
 import fs from 'fs';
+import Vibrant from 'node-vibrant';
+const fsPromises = fs.promises;
+import { createIco } from 'create-ico';
 
 type IconSpec = {
   size: number;
@@ -71,6 +74,7 @@ class Icon {
       ];
     }
     await this.resize(designSpecs);
+    await this.generateFavicon();
   }
 
   async convertMicrosoft(this: Icon) {
@@ -82,7 +86,26 @@ class Icon {
       { size: 310, name: 'ms-icon-310x310.png' },
     ];
     await this.resize(designSpecs);
+    await this.generateBrowserConfig();
   }
+
+  generateBrowserConfig = async (): Promise<void> => {
+    const v = new Vibrant(this.filePath);
+    const palette = await v.getPalette();
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+    const primaryColor = palette.DarkVibrant!.getHex();
+    const browserConfig =
+      '<?xml version="1.0" encoding="utf-8"?>\n<browserconfig><msapplication><tile><square70x70logo src="/icons/ms-icon-70x70.png"/><square150x150logo src="/icons/ms-icon-150x150.png"/><square310x310logo src="/icons/ms-icon-310x310.png"/><TileColor>' +
+      primaryColor +
+      '</TileColor></tile></msapplication></browserconfig>';
+    const browserConfigPath = './icons/browserconfig.xml';
+    await fsPromises.writeFile(browserConfigPath, browserConfig);
+  };
+
+  generateFavicon = async (): Promise<void> => {
+    const ico = await createIco(this.filePath, { sizes: [16, 32, 64, 256] });
+    fs.writeFileSync(this.outputPath + 'favicon.ico', ico);
+  };
 }
 
 const main = async () => {

@@ -24,6 +24,9 @@ node_modules/
 # Optional npm cache directory
 .npm
 
+# npm lock file -> yarn. We wear blue on Tuesdays.
+package-lock.json
+
 # Optional eslint cache
 .eslintcache
 
