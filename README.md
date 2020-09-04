@@ -1,4 +1,4 @@
-# 🐬 Dockerized TypeScript App Template
+# 🐬 PWA Icon Generator
 
 TypeScript based stack for testing & production with the following features:
 
@@ -62,4 +62,3 @@ Timothy Miller
 
 - GitHub: <https://github.com/timothymiller> 💡
 - Website: <https://timknowsbest.com> 💻
-- Donation: <https://timknowsbest.com/donate> 💸

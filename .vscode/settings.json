@@ -1,5 +1,35 @@
 {
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.alwaysShowStatus": true,
+  "typescript.tsdk": "node_modules/typescript/lib",
   "files.exclude": {
+    "**/.git": false,
+    "**/.svn": false,
+    "**/.hg": false,
+    "**/CVS": false,
+    "**/.DS_Store": false,
+    "node_modules": false,
+    "yarn.lock": false,
+    "LICENSE": false,
+    ".dockerignore": false,
+    ".eslintrc.js": false,
+    ".gitignore": false,
+    ".vscode": false,
+    ".github/*.*": false,
+    ".github": false,
+    "rollup.config.js": false,
+    "tsconfig.json": false,
+    "build": false,
+    "prod": false,
+    "package-lock.json": false,
+    "Dockerfile": false,
+    ".prettierignore": false,
+    ".prettierrc.js": false
+  },
+  "explorerExclude.backup": {
     "**/.git": true,
     "**/.svn": true,
     "**/.hg": true,
@@ -10,7 +40,7 @@
     "LICENSE": true,
     ".dockerignore": true,
     ".eslintrc.js": true,
-    ".gitignore": false,
+    ".gitignore": true,
     ".vscode": true,
     ".github/*.*": true,
     ".github": true,
@@ -19,7 +49,8 @@
     "build": true,
     "prod": true,
     "package-lock.json": true,
-    "Dockerfile": true
-  },
-  "explorerExclude.backup": null
+    "Dockerfile": true,
+    ".prettierignore": true,
+    ".prettierrc.js": true
+  }
 }
