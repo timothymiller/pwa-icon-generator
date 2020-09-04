@@ -1,5 +1,22 @@
 # 🐬 PWA Icon Generator
 
+This is a simple node.js program to simplify converting original artwork to the numerous progressive web app icon formats.
+
+pwa-icon-generator saves image output to the ```/icon/``` folder which can be dropped inside the ```/public/``` directory of my [full-stack-antd-next](https://github.com/timothymiller/full-stack-antd-next) template. Two steps to support favicons/PWA icons on all web client platforms from Windows 7 to iOS 14.
+
+### Input
+
+This program takes two square image files (jpg or png), one non-masked, the other masked. Read more about [maskable icons here](https://web.dev/maskable-icon/).
+
+Place images inside the ```/convert/``` folder in the project root directory, then ```yarn``` + ```yarn start```
+
+### Output
+
+Images are saved inside the ```/icon/``` folder in the project root directory.
+
+
+Technical information about the TypeScript stack is listed below:
+
 TypeScript based stack for testing & production with the following features:
 
 - Tree-shaking
@@ -29,6 +46,7 @@ Creates a minimal Docker image based on the output from yarn build
 
 - TypeScript
 - ES6
+- Node.js
 
 ## 🔨 Unit Testing
 
@@ -52,13 +70,14 @@ If you wanted to extend this template to create an API server, you would do so i
 
 ```docker run -p <public_port>:<private_port> -d <image>```
 
-## :police_car: License
+## 🚓 License
 
 This project is licensed under the GNU General Public License, version 3 (GPLv3) and is distributed free of charge.
 
-## 👨‍💻 Contributors
+## 👨‍💻 Author
 
 Timothy Miller
 
-- GitHub: <https://github.com/timothymiller> 💡
-- Website: <https://timknowsbest.com> 💻
+[View my GitHub profile 💡](https://github.com/timothymiller)
+
+[View my personal website 💻](https://timknowsbest.com)
