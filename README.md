@@ -4,13 +4,13 @@ This is a simple node.js program to simplify converting original artwork to the 
 
 pwa-icon-generator saves image output to the ```/icon/``` folder which can be dropped inside the ```/public/``` directory of my [full-stack-antd-next](https://github.com/timothymiller/full-stack-antd-next) template. Two steps to support favicons/PWA icons on all web client platforms from Windows 7 to iOS 14.
 
-### Input
+### 🖼️ Input
 
 This program takes two square image files (jpg or png), one non-masked, the other masked. Read more about [maskable icons here](https://web.dev/maskable-icon/).
 
-Place images inside the ```/convert/``` folder in the project root directory, then ```yarn``` + ```yarn start```
+Place images inside the ```/convert/``` folder in the project root directory, then ```yarn && yarn start```
 
-### Output
+### 🎞️ Output
 
 Images are saved inside the ```/icon/``` folder in the project root directory.
 
