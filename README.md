@@ -8,6 +8,8 @@ pwa-icon-generator saves image output to the ```/icons/``` folder which can be d
 
 This program takes two square image files (jpg or png), one non-masked, the other masked. Read more about [maskable icons here](https://web.dev/maskable-icon/).
 
+*** It is reccommended to design source images in at least 3000x3000 pixels ***
+
 Place images inside the ```/convert/``` folder in the project root directory, then ```yarn && yarn start```
 
 ### 🎞️ Output
@@ -15,7 +17,7 @@ Place images inside the ```/convert/``` folder in the project root directory, th
 Images are saved inside the ```/icons/``` folder in the project root directory.
 
 
-Technical information about the TypeScript stack is listed below:
+### Technical information
 
 TypeScript based stack for testing & production with the following features:
 
