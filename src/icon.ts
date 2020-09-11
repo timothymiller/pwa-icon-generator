@@ -174,7 +174,7 @@ class Icon {
     );
     context.font = 'bold ' + fontSize + 'pt Menlo';
     const textX = width / 2;
-    const textY = height - shortestSide * 0.06;
+    const textY = height - shortestSide * 0.12;
     context.fillText(this.website, textX, textY);
 
     // Write to disk
