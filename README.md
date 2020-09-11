@@ -2,6 +2,8 @@
 
 This is a simple node.js program to simplify converting original artwork to the numerous progressive web app icon formats.
 
+*** Supports landscape & portrait splash screens on iOS across 10 different screen sizes ***
+
 pwa-icon-generator saves image output to the ```/icons/``` folder which can be dropped inside the ```/public/``` directory of my [full-stack-antd-next](https://github.com/timothymiller/full-stack-antd-next) template. Two steps to support favicons/PWA icons on all web client platforms from Windows 7 to iOS 14.
 
 ### 🖼️ Input
@@ -17,7 +19,7 @@ Place images inside the ```/convert/``` folder in the project root directory, th
 Images are saved inside the ```/icons/``` folder in the project root directory.
 
 
-### Technical information
+### 🔬 Technical information
 
 TypeScript based stack for testing & production with the following features:
 
