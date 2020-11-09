@@ -1,5 +1,7 @@
 # 🐬 PWA Icon Generator
 
+![PWA Icon Generator Logo](/images/feature-image.png)
+
 This is a simple node.js program to simplify converting original artwork to the numerous progressive web app icon formats.
 
 *** Supports landscape & portrait splash screens on iOS across 10 different screen sizes ***
