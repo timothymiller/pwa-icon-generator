@@ -10,9 +10,7 @@ pwa-icon-generator saves image output to the ```/icons/``` folder which can be d
 
 ### 🖼️ Input
 
-- Two square images
-
-** Recommended minimum image width/height: 3,000 pixels **
+- Two square images, width/height > 3,000 pixels
 
 1. `icon.png`
 2. `masked-icon.png`
