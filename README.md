@@ -10,11 +10,17 @@ pwa-icon-generator saves image output to the ```/icons/``` folder which can be d
 
 ### 🖼️ Input
 
-This program takes two square image files (jpg or png), one non-masked, the other masked. Read more about [maskable icons here](https://web.dev/maskable-icon/).
+- Two square images
 
-*** It is reccommended to design source images in at least 3000x3000 pixels ***
+** Recommended minimum image width/height: 3,000 pixels **
 
-Place images inside the ```/convert/``` folder in the project root directory, then ```yarn && yarn start```
+1. `icon.png`
+2. `masked-icon.png`
+3. Place images inside the ```/convert/``` folder in the project root directory, then ```yarn && yarn start```
+
+#### ⚠️ About Masked Icons
+
+- Read more about [maskable icons here](https://web.dev/maskable-icon/).
 
 ### 🎞️ Output
 
