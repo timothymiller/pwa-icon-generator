@@ -23,6 +23,7 @@ const main = async () => {
   for (const icon of icons) {
     await icon.convertAll();
   }
+  console.log('Done!');
 };
 
 (async function () {

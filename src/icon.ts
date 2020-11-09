@@ -107,6 +107,7 @@ class Icon {
   };
 
   generateFavicon = async (): Promise<void> => {
+    if (this.isMasked()) return;
     const ico = await createIco(this.filePath, { sizes: [16, 32, 64, 256] });
     fs.writeFileSync(this.iconPath + 'favicon.ico', ico);
   };
