@@ -1,6 +1,6 @@
-# 🐬 PWA Icon Generator
-
 ![PWA Icon Generator Logo](/images/feature-image.png)
+
+# 🐬 PWA Icon Generator
 
 This is a simple node.js program to simplify converting original artwork to the numerous progressive web app icon formats.
 
@@ -8,19 +8,21 @@ This is a simple node.js program to simplify converting original artwork to the 
 
 pwa-icon-generator saves image output to the ```/icons/``` folder which can be dropped inside the ```/public/``` directory of my [full-stack-antd-next](https://github.com/timothymiller/full-stack-antd-next) template. Two steps to support favicons/PWA icons on all web client platforms from Windows 7 to iOS 14.
 
-### 🖼️ Input
+## 🚆 Getting Started
+
+### 🖼️ Input: Original image assets
 
 - Two square images, width/height > 3,000 pixels
 
 1. `icon.png`
 2. `masked-icon.png`
-3. Place images inside the ```/convert/``` folder in the project root directory, then ```yarn && yarn start```
+3. Place images inside the ```/convert/``` folder in the project root directory, then run ```yarn && yarn start```
 
 #### ⚠️ About Masked Icons
 
 - Read more about [maskable icons here](https://web.dev/maskable-icon/).
 
-### 🎞️ Output
+### 🎞️ Output: PWA icons + splashscreens for all platforms
 
 Images are saved inside the ```/icons/``` folder in the project root directory.
 
