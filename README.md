@@ -8,7 +8,7 @@ This is a simple node.js program to simplify converting original artwork to the 
 
 pwa-icon-generator saves image output to the ```/icons/``` folder which can be dropped inside the ```/public/``` directory of my [full-stack-antd-next](https://github.com/timothymiller/full-stack-antd-next) template. Two steps to support favicons/PWA icons on all web client platforms from Windows 7 to iOS 14.
 
-## 🚆 Getting Started
+## 🚆 How to Use
 
 ### 🖼️ Input: Original image assets
 
@@ -36,7 +36,7 @@ TypeScript based stack for testing & production with the following features:
 - Instant reload in debug mode
 - ESLint & Prettier support for Visual Studio Code out of the box
 
-## 🎬 Getting Started
+## 🎬 Developers: Getting Started
 
 ```yarn start```
 
@@ -82,7 +82,7 @@ If you wanted to extend this template to create an API server, you would do so i
 
 ```docker run -p <public_port>:<private_port> -d <image>```
 
-## 🚓 License
+## ⚖️ License
 
 This project is licensed under the GNU General Public License, version 3 (GPLv3) and is distributed free of charge.
 
