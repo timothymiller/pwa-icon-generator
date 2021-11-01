@@ -3,6 +3,7 @@ import fs from 'fs'
 const fsPromises = fs.promises
 import { createIco } from 'create-ico'
 import { createCanvas, loadImage, CanvasRenderingContext2D } from 'canvas'
+require('dotenv').config()
 
 type IconSpec = {
   size: number
@@ -11,7 +12,7 @@ type IconSpec = {
 
 class Icon {
   private iconPath = '' + process.env.APP_DATA_PATH + '/icons/'
-  private splashPath = '' + process.env.APP_DATA_PATH + '/splash/'
+  private splashPath = '' + process.env.APP_DATA_PATH + '/icons/splash/'
   private backgroundColor = '' + process.env.BACKGROUND_COLOR
   private appName = '' + process.env.APP_NAME
   private website = '' + process.env.WEBSITE
@@ -141,7 +142,7 @@ class Icon {
 
     // Draw background rectangle
     const logoFontSize = this.determineFontSize(context, width, text, percentBoxWidth)
-    context.font = 'bold ' + logoFontSize + 'pt Menlo'
+    context.font = 'bold ' + logoFontSize + 'pt ' + process.env.FONT_FAMILY
     context.textAlign = 'center'
     context.textBaseline = 'top'
     context.fillStyle = this.primaryColor
@@ -153,12 +154,12 @@ class Icon {
 
     // Draw app name centered inside rectangle
     context.fillStyle = this.primaryTextColor
-    context.fillText(text, width / 2, boxY)
+    context.fillText(text, width / 2, boxY + textHeight * 0.09)
 
     // Draw website name at bottom, centered horizontally
     context.fillStyle = this.secondaryTextColor
     const fontSize = this.determineFontSize(context, width, this.website, percentWebsiteWidth)
-    context.font = 'bold ' + fontSize + 'pt Menlo'
+    context.font = 'bold ' + fontSize + 'pt ' + process.env.FONT_FAMILY
     const textX = width / 2
     const textY = height - shortestSide * 0.12
     context.fillText(this.website, textX, textY)

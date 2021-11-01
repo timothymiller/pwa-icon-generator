@@ -1,5 +1,6 @@
 import fs from 'fs'
 import { Icon } from './icon'
+require('dotenv').config()
 
 const main = async () => {
   const inputPath = process.env.APP_DATA_PATH + '/convert/'

@@ -16,6 +16,7 @@
   "dependencies": {
     "canvas": "^2.8.0",
     "create-ico": "^1.0.0",
+    "dotenv": "^10.0.0",
     "favicons": "^6.2.2",
     "jimp": "^0.16.1",
     "node-vibrant": "^3.1.6"
