@@ -1,7 +1,7 @@
-import { assert } from 'chai';
+import { assert } from 'chai'
 
-describe("title", () => {
-    it("use case description", () => {
-        assert.equal(2, 2);
-    })
+describe('title', () => {
+  it('use case description', () => {
+    assert.equal(2, 2)
+  })
 })

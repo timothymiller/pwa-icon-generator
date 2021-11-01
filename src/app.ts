@@ -1,31 +1,31 @@
-import fs from 'fs';
-import { Icon } from './icon';
+import fs from 'fs'
+import { Icon } from './icon'
 
 const main = async () => {
-  const inputPath = './convert/';
-  const fileNames = fs.readdirSync(inputPath);
+  const inputPath = process.env.APP_DATA_PATH + '/convert/'
+  const fileNames = fs.readdirSync(inputPath)
   if (fileNames.length > 2) {
-    throw 'Max 2 input files required.';
+    throw 'Max 2 input files required.'
   }
   if (fileNames.length < 2) {
-    throw 'Masked & Non-Masked icon files required.';
+    throw 'Masked & Non-Masked icon files required.'
   }
-  const icons: Icon[] = [];
+  const icons: Icon[] = []
   for (const fileName of fileNames) {
-    const icon = new Icon(inputPath + fileName);
+    const icon = new Icon(inputPath + fileName)
     if (await icon.isSquare()) {
-      icons.push(icon);
+      icons.push(icon)
     } else {
-      throw icon.describe + ' width must equal height.';
+      throw icon.describe + ' width must equal height.'
     }
   }
-  console.log('Generating icons...');
+  console.log('Generating icons...')
   for (const icon of icons) {
-    await icon.convertAll();
+    await icon.convertAll()
   }
-  console.log('Done!');
-};
+  console.log('Done!')
+}
 
-(async function () {
-  await main();
-})();
+;(async function () {
+  await main()
+})()
