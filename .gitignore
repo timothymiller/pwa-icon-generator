@@ -54,3 +54,6 @@ build/
 
 # production bundle statistics
 stats.html
+pwa-icon-generator.yml
+deploy.sh
+.vscode/settings.json
